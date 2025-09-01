@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="PersistenceUnitSettings">
+    <persistence-units>
+      <persistence-unit moduleName="aviation" name="aviation" framework="JPA" ormUnit="aviation:aviation" defaultDataSourceId="5d37a90e-eaf7-4976-be86-9b97e6e2ad8b" />
+    </persistence-units>
+  </component>
+</project>
