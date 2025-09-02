@@ -4,10 +4,10 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class FlightfuryAircraftsApplication {
+public class FlightFuryAircraftsApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(FlightfuryAircraftsApplication.class, args);
+        SpringApplication.run(FlightFuryAircraftsApplication.class, args);
     }
 
 }
