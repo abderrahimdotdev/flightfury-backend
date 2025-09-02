@@ -23,8 +23,8 @@ public class FlightFuryManufacturersApplication implements CommandLineRunner {
     @Override
     public void run(String... args) throws Exception {
         manufacturerRepository.saveAll(List.of(
-                new Manufacturer(1L,"Northrop Grumman Corporation","USA",1994),
-                new Manufacturer(1L,"Boeing","USA",1916)
+                new Manufacturer("Northrop Grumman Corporation","West Falls Church, Virginia","USA",1994),
+                new Manufacturer("Boeing","Crystal City, Virginia","USA",1916)
         ));
     }
 }
