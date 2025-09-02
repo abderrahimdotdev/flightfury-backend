@@ -19,9 +19,10 @@ public class AircraftController {
         this.aircraftRepository = aircraftRepository;
     }
 
-    @RequestMapping(method = RequestMethod.GET)
-    public Optional<Aircraft> getAircraftByCode(@RequestParam(name = "icaoCode") String icaoCode) {
+    @GetMapping
+    public Optional<Aircraft> findByIcaoCode(@RequestParam(name = "icaoCode") String icaoCode) {
         return aircraftRepository.icaoCode(icaoCode);
     }
+
 
 }
