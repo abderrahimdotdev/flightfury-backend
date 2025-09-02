@@ -1,22 +1,22 @@
 package dev.abderrahim.flightfurymanufacturers.models;
 
-import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+import org.springframework.data.annotation.Id;
+import org.springframework.data.mongodb.core.mapping.Document;
 
 import java.time.LocalDate;
 
-@Entity
-@Table(schema = "MANUFACTURERS")
+@Document(value = "manufacturers")
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
 public class Manufacturer {
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long id;
     private String name;
-    private String countryOfOrigin;
-    private LocalDate foundingYear;
+    private String city;
+    private String country;
+    private int foundingYear;
 }
