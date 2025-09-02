@@ -1,14 +1,13 @@
-package dev.abderrahim.aviation.repos;
+package dev.abderrahim.flightfury.repos;
 
-import dev.abderrahim.aviation.models.Aircraft;
-import dev.abderrahim.aviation.models.Projections;
+import dev.abderrahim.flightfury.models.Aircraft;
+import dev.abderrahim.flightfury.models.Projections;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.rest.core.annotation.RepositoryRestResource;
 import org.springframework.data.rest.core.annotation.RestResource;
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestParam;
 
 import java.util.Optional;
 
@@ -20,7 +19,7 @@ public interface AircraftRepository extends JpaRepository<Aircraft, Long> {
     Optional<Aircraft> findTopByOrderByMaxSpeedDesc();
 
     @RestResource(path = "stats")
-    //@Query("select new dev.abderrahim.aviation.models.AircraftStats(max(a.maxSpeed),max(a.height)) from Aircraft a")
+    //@Query("select new dev.abderrahim.flightfury.models.AircraftStats(max(a.maxSpeed),max(a.height)) from Aircraft a")
     @Query("select max(a.maxSpeed),max(a.height),max(a.weight),max(a.wingspan),max(a.length) from Aircraft a")
     Optional<Projections.AircraftStats> stats();
 

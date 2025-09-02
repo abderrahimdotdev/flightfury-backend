@@ -9,10 +9,10 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>dev.abderrahim</groupId>
-    <artifactId>aviation</artifactId>
+    <artifactId>flightfury-aircrafts</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>aviation</name>
-    <description>aviation</description>
+    <name>flightfury-aircrafts</name>
+    <description>FlightFury aircrafts application</description>
     <url/>
     <licenses>
         <license/>

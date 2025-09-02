@@ -1,10 +1,10 @@
-package dev.abderrahim.aviation;
+package dev.abderrahim.flightfury;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class AviationApplicationTests {
+class FlightFuryApplicationTests {
 
     @Test
     void contextLoads() {

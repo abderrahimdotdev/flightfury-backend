@@ -10,13 +10,13 @@
         <processorPath useClasspath="false">
           <entry name="$MAVEN_REPOSITORY$/org/projectlombok/lombok/1.18.38/lombok-1.18.38.jar" />
         </processorPath>
-        <module name="aviation" />
+        <module name="flightfury-aircrafts" />
       </profile>
     </annotationProcessing>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
-      <module name="aviation" options="-parameters" />
+      <module name="flightfury-aircrafts" options="-parameters" />
     </option>
   </component>
 </project>

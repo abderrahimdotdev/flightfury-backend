@@ -1,13 +1,13 @@
-package dev.abderrahim.aviation;
+package dev.abderrahim.flightfury;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class AviationApplication {
+public class FlightFuryAircraftsApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(AviationApplication.class, args);
+        SpringApplication.run(FlightFuryAircraftsApplication.class, args);
     }
 
     /*

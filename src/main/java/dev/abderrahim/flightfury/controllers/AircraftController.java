@@ -1,7 +1,7 @@
-package dev.abderrahim.aviation.controllers;
+package dev.abderrahim.flightfury.controllers;
 
-import dev.abderrahim.aviation.models.Aircraft;
-import dev.abderrahim.aviation.repos.AircraftRepository;
+import dev.abderrahim.flightfury.models.Aircraft;
+import dev.abderrahim.flightfury.repos.AircraftRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.rest.webmvc.RepositoryRestController;
 import org.springframework.web.bind.annotation.*;

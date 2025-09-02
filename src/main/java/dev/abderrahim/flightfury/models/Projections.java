@@ -1,4 +1,4 @@
-package dev.abderrahim.aviation.models;
+package dev.abderrahim.flightfury.models;
 
 
 public class Projections{
