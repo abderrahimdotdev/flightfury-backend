@@ -1,7 +1,8 @@
-package dev.abderrahim.flightfury.repos;
+package dev.abderrahim.flightfuryaircrafts.repositories;
 
-import dev.abderrahim.flightfury.models.Aircraft;
-import dev.abderrahim.flightfury.models.Projections;
+
+import dev.abderrahim.flightfuryaircrafts.models.Aircraft;
+import dev.abderrahim.flightfuryaircrafts.models.Projections;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.rest.core.annotation.RepositoryRestResource;

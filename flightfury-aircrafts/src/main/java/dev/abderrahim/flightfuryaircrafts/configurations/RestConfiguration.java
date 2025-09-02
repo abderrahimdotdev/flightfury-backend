@@ -1,4 +1,4 @@
-package dev.abderrahim.flightfury.configurations;
+package dev.abderrahim.flightfuryaircrafts.configurations;
 
 import org.springframework.data.rest.webmvc.config.RepositoryRestConfigurer;
 

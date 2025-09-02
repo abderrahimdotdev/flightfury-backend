@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/flightfury-aircrafts.iml" filepath="$PROJECT_DIR$/flightfury-aircrafts.iml" />
+      <module fileurl="file://$PROJECT_DIR$/flightfury.iml" filepath="$PROJECT_DIR$/flightfury.iml" />
     </modules>
   </component>
 </project>
