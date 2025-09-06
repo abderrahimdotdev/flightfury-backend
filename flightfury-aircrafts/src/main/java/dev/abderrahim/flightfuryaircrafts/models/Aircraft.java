@@ -21,10 +21,13 @@ public class Aircraft {
     @Column(name = "MANUFACTURER", nullable = false)
     private String manufacturer;
 
-    @Column(name = "MODEL_FAA",nullable = false)
+    @Column(name = "MANUFACTURER_ID", nullable = false)
+    private String manufacturerId;
+
+    @Column(name = "MODEL_FAA")
     private String modelFAA;
 
-    @Column(name = "MODEL_BADA",nullable = false)
+    @Column(name = "MODEL_BADA")
     private String modelBADA;
 
     @Column(name = "PHYSICAL_CLASS_ENGINE")
