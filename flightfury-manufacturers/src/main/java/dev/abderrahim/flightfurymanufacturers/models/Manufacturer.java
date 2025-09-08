@@ -11,8 +11,9 @@ import org.springframework.data.mongodb.core.mapping.Document;
 @AllArgsConstructor
 @NoArgsConstructor
 public class Manufacturer {
+    @Id
+    private long id;
     private String name;
-    private String city;
-    private String country;
+    private String headquarters;
     private int foundingYear;
 }
