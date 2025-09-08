@@ -2,7 +2,9 @@ package dev.abderrahim.flightfuryaircrafts.models;
 
 
 public class Projections{
-    public record AircraftStats(int maxSpeed, double maxHeight, int maxWeight, double maxWingspan, double maxLength) {
+    public record AircraftStats(int minSpeed, int maxSpeed, double minHeight, double maxHeight, int minWeight,
+                                int maxWeight, double minWingspan, double maxWingspan, double minLength,
+                                double maxLength) {
 
     }
 }

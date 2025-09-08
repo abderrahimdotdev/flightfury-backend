@@ -21,7 +21,7 @@ public interface AircraftRepository extends JpaRepository<Aircraft, Long> {
 
     @RestResource(path = "stats")
     //@Query("select new dev.abderrahim.flightfury.models.AircraftStats(max(a.maxSpeed),max(a.height)) from Aircraft a")
-    @Query("select max(a.maxSpeed),max(a.height),max(a.weight),max(a.wingspan),max(a.length) from Aircraft a")
+    @Query("select min(a.maxSpeed),max(a.maxSpeed),min(a.height),max(a.height),min(a.weight),max(a.weight),min(a.wingspan),max(a.wingspan),min(a.length),max(a.length) from Aircraft a")
     Optional<Projections.AircraftStats> stats();
 
     @RestResource(path = "/by")
