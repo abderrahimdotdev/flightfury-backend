@@ -1,0 +1,22 @@
+spring:
+  application:
+    name: flightfury-service-discovery
+#  cloud:
+#    gateway:
+#      server:
+#        webmvc:
+#          routes:
+#            - id: aircrafts-service
+#              uri: http://localhost/
+server:
+  port: 8761
+
+eureka:
+  client:
+    fetch-registry: false
+    register-with-eureka: false
+logging:
+  level:
+    com.netflix.discovery: OFF
+    com.netflix.eureka: OFF
+
