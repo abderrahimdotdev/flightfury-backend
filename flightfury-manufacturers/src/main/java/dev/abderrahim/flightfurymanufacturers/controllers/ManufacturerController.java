@@ -4,10 +4,12 @@ import dev.abderrahim.flightfurymanufacturers.models.Manufacturer;
 import dev.abderrahim.flightfurymanufacturers.repositories.ManufacturerRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import java.util.List;
+import java.util.Optional;
 
 @RestController
 @RequestMapping(path = "/manufacturers")
@@ -15,13 +17,18 @@ public class ManufacturerController {
 
     private final ManufacturerRepository manufacturerRepository;
 
+    @Autowired
+    public ManufacturerController(ManufacturerRepository manufacturerRepository) {
+        this.manufacturerRepository = manufacturerRepository;
+    }
+
     @GetMapping
     public List<Manufacturer> findAll() {
         return manufacturerRepository.findAll();
     }
 
-    @Autowired
-    public ManufacturerController(ManufacturerRepository manufacturerRepository) {
-        this.manufacturerRepository = manufacturerRepository;
+    @GetMapping(path = "/{id}")
+    public Optional<Manufacturer> findOne(@PathVariable(name = "id") long id) {
+        return manufacturerRepository.findById(id);
     }
 }
