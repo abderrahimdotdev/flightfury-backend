@@ -8,6 +8,13 @@ This is the back-end for an aviation application, built using the Spring Framewo
 
 The front-end project can be found [here](#)
 
+## 📸 Screenshots
+
+<p align="center">
+    <img width="48%" alt="" src="./app-screenshots/details-page.jpg">
+    <img width="48%" alt="" src="./app-screenshots/gallery-page.jpg">
+</p>
+
 ## ✅ Features
 - Microservices Architecture: Built with Spring Cloud for scalability and distributed system support.
 - Relational Database Support: Uses Spring Data JPA for seamless interaction with relational databases.
@@ -73,10 +80,3 @@ flightfury-backend/
 ├── Dockerfile # Docker configuration
 └── README.md # This file
 ```
-
-## 📸 Screenshots
-
-<p align="center">
-    <img width="48%" alt="" src="./app-screenshots/details-page.jpg">
-    <img width="48%" alt="" src="./app-screenshots/gallery-page.jpg">
-</p>
