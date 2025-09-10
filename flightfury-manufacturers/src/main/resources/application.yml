@@ -11,8 +11,8 @@ spring:
   application:
     name: flightfury-manufacturers
   datasource:
-    url: mongodb://localhost:27017
+    url: ${MANUFACTURERS_DB_URL:mongodb://localhost:27017}
   data:
     mongodb:
-      database: manufacturers
-      port: 27017
+      database: ${MANUFACTURERS_DB_NAME:manufacturers}
+      port: ${MANUFACTURERS_DB_PORT:27017}
