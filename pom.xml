@@ -33,6 +33,8 @@
     <modules>
         <module>flightfury-aircrafts</module>
         <module>flightfury-manufacturers</module>
+        <module>flightfury-gateway</module>
+        <module>flightfury-service-discovery</module>
     </modules>
     <packaging>pom</packaging>
     <dependencies>
