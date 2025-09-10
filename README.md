@@ -22,12 +22,11 @@ The front-end project can be found [here](#)
 - Spring Cloud (Eureka & Gateway)
 - Spring Data JPA
 - Spring Data MongoDB
-- MySQL
-- MongoDB
+- MySQL & MongoDB databases
 - JUnit 5
 - Docker
 
-📁 Project Structure
+## 📁 Project Structure
 
 ```bash
 flightfury-backend/
