@@ -1,0 +1,28 @@
+server:
+  port: 8080
+
+logging:
+  level:
+    web: debug
+
+spring:
+  application:
+    name: flightfury-aircrafts
+  data:
+    rest:
+      base-path: "/"
+      max-page-size: 20
+  datasource:
+    url: jdbc:mysql://localhost:3306/testdb
+    username: abderrahim
+    password: 123456
+  jpa:
+    hibernate:
+      ddl-auto: none
+      naming:
+        physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
+    show-sql: true
+    open-in-view: false
+  sql:
+    init:
+      mode: never
