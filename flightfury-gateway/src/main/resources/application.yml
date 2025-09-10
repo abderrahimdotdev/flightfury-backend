@@ -1,0 +1,30 @@
+server:
+  port: 8082
+
+spring:
+  application:
+    name: flightfury-gateway
+  cloud:
+    gateway:
+      server:
+        webflux:
+          globalcors:
+            cors-configurations:
+              '[/**]':
+                allowed-origins: "*"
+                allowed-headers: "*"
+          default-filters:
+            - DedupeResponseHeader=Access-Control-Allow-Credentials Access-Control-Allow-Origin RETAIN_UNIQUE
+          discovery:
+            locator:
+              enabled: true
+              lower-case-service-id: true
+          routes:
+            - id: flightfury-manufacturers
+              uri: lb://manufacturers-service
+              predicates:
+                - Path= /manufacturers/**
+            - id: flightfury-aircrafts
+              uri: lb://aircrafts-service
+              predicates:
+                - Path= /aircrafts/**
