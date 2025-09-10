@@ -9,6 +9,7 @@
         <option value="$PROJECT_DIR$/flightfury-manufacturers/pom.xml" />
         <option value="$PROJECT_DIR$/flightfury-aircrafts/pom.xml" />
         <option value="$PROJECT_DIR$/flightfury-service-discovery/pom.xml" />
+        <option value="$PROJECT_DIR$/flightfury-gateway/pom.xml" />
       </list>
     </option>
   </component>

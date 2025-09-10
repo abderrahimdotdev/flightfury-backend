@@ -15,8 +15,9 @@
         <processorPath useClasspath="false">
           <entry name="$MAVEN_REPOSITORY$/org/projectlombok/lombok/1.18.38/lombok-1.18.38.jar" />
         </processorPath>
-        <module name="flightfury-aircrafts" />
         <module name="flightfury-manufacturers" />
+        <module name="flightfury-gateway" />
+        <module name="flightfury-aircrafts" />
         <module name="flightfury-service-discovery" />
       </profile>
     </annotationProcessing>
@@ -25,6 +26,7 @@
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="flightfury" options="-parameters" />
       <module name="flightfury-aircrafts" options="-parameters" />
+      <module name="flightfury-gateway" options="-parameters" />
       <module name="flightfury-manufacturers" options="-parameters" />
       <module name="flightfury-service-discovery" options="-parameters" />
     </option>
