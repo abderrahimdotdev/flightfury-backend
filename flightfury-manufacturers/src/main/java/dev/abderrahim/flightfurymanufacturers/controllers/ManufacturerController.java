@@ -3,16 +3,14 @@ package dev.abderrahim.flightfurymanufacturers.controllers;
 import dev.abderrahim.flightfurymanufacturers.models.Manufacturer;
 import dev.abderrahim.flightfurymanufacturers.repositories.ManufacturerRepository;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 import java.util.Optional;
 
 @RestController
 @RequestMapping(path = "/manufacturers")
+@CrossOrigin(origins = {"*"})
 public class ManufacturerController {
 
     private final ManufacturerRepository manufacturerRepository;
