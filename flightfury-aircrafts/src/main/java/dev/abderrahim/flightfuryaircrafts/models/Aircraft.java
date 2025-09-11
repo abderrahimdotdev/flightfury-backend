@@ -22,7 +22,7 @@ public class Aircraft {
     private String manufacturer;
 
     @Column(name = "MANUFACTURER_ID", nullable = false)
-    private String manufacturerId;
+    private Long manufacturerId;
 
     @Column(name = "MODEL_FAA")
     private String modelFAA;
