@@ -42,7 +42,6 @@ flightfury-backend/
 │   └── src/
 │       ├── main/
 │       │   ├── java/dev/abderrahim/flightfuryaicrafts/
-│       │   │   ├── controllers/    # REST controllers
 │       │   │   ├── repositories/   # JPA repositories
 │       │   │   ├── models/         # Entity classes
 │       │   │   └── FlightFuryAircraftsApplication.java # Spring Boot main class
