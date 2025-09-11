@@ -6,7 +6,7 @@
         <groupId>dev.abderrahim</groupId>
         <artifactId>flightfury</artifactId>
         <version>0.0.1-SNAPSHOT</version>
-        <relativePath/> <!-- lookup parent from repository -->
+        <relativePath>..</relativePath>
     </parent>
     <artifactId>flightfury-gateway</artifactId>
     <version>0.0.1-SNAPSHOT</version>
