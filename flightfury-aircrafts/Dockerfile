@@ -1,12 +1,23 @@
-FROM eclipse-temurin:21-alpine
+FROM eclipse-temurin:21-jdk-alpine
 LABEL authors="abderrahim"
 
-RUN useradd flightfury -s $(which sh)
-
-USER flightfury
+RUN groupadd -r flightfury && useradd flightfury -s $(which bash)
 
 WORKDIR /app
 
-COPY target/flightfury-aircrafts-0.0.1-SNAPSHOT.jar .
+RUN chown -R /app flightfury:flightfury
 
-ENTRYPOINT ["./mvnw", "spring-boot:run","flightfury-aircrafts-0.0.1-SNAPSHOT.jar"]
+USER flightfury
+
+COPY ./ .
+
+RUN ./mvnw clean package
+
+
+FROM eclipse-temurin:21-jdk-alpine
+
+WORKDIR /app
+
+COPY --from=build /app/src/target/flightfury-aircrafts-0.0.1-SNAPSHOT.jar .
+
+#ENTRYPOINT ["./mvnw", "spring-boot:run","flightfury-aircrafts-0.0.1-SNAPSHOT.jar"]
