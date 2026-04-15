@@ -8,12 +8,12 @@ spring:
     gateway:
       server:
         webflux:
-          globalcors:
-            cors-configurations:
-              '[/**]':
-                allowed-origins: "*"
-                allowed-headers: "*"
-                allowed-methods: "*"
+#          globalcors:
+#            cors-configurations:
+#              '[/**]':
+#                allowed-origins: "*"
+#                allowed-headers: "*"
+#                allowed-methods: "*"
           default-filters:
             - DedupeResponseHeader=Access-Control-Allow-Credentials Access-Control-Allow-Origin RETAIN_UNIQUE
           discovery:
@@ -22,10 +22,10 @@ spring:
               lower-case-service-id: true
           routes:
             - id: flightfury-manufacturers
-              uri: lb://manufacturers-service
+              uri: lb://flightfury-manufacturers
               predicates:
-                - Path= /manufacturers/**
+                - Path=/manufacturers/**
             - id: flightfury-aircrafts
-              uri: lb://aircrafts-service
+              uri: lb://flightfury-aircrafts
               predicates:
-                - Path= /aircrafts/**
+                - Path=/aircrafts/**
